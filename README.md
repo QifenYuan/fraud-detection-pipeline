@@ -15,17 +15,32 @@ A robust, end-to-end MLOps pipeline for auto insurance fraud detection, featurin
 
 ---
 
+
 ## Architecture
 
-```mermaid
-graph TD
-    A[Raw Data] --> Z[Automated Ingestion Script (ingest_data.py)]
-    Z --> B[dbt: stg_claims.sql]
-    B --> C[dbt: fct_claims_predictions.sql]
-    C --> D[Model Training (sklearn Pipeline)]
-    D --> E[Trained Model (.pkl)]
-    E --> F[FastAPI Prediction Service]
-    F --> G[API Client (curl/Postman)]
+```
+Raw Data
+   |
+   v
+Automated Ingestion Script (ingest_data.py)
+   |
+   v
+dbt: stg_claims.sql
+   |
+   v
+dbt: fct_claims_predictions.sql
+   |
+   v
+Model Training (sklearn Pipeline)
+   |
+   v
+Trained Model (.pkl)
+   |
+   v
+FastAPI Prediction Service
+   |
+   v
+API Client (curl/Postman)
 ```
 
 ---
