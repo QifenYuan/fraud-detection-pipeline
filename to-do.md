@@ -155,7 +155,7 @@ fraud-detection-pipeline/
   - start the API server 
   - test a sample on Postman
 
-### Publishing on GitHub
+### [done!] Publishing on GitHub
 
 #### 1. Create a New GitHub Repository
 
