@@ -1,0 +1,32 @@
+{
+  "model_type": "AdaBoostClassifier",
+  "training_date": "2025-08-01T18:54:55.047735",
+  "train_accuracy": 0.8171875,
+  "test_accuracy": 0.825,
+  "fraud_recall": 0.7045454545454546,
+  "fraud_f1_score": 0.6888888888888889,
+  "fraud_precision": 0.6739130434782609,
+  "features_count": 53,
+  "training_samples": 640,
+  "test_samples": 160,
+  "best_params": {
+    "algorithm": "SAMME",
+    "estimator__ccp_alpha": 0.0,
+    "estimator__class_weight": null,
+    "estimator__criterion": "entropy",
+    "estimator__max_depth": 3,
+    "estimator__max_features": null,
+    "estimator__max_leaf_nodes": null,
+    "estimator__min_impurity_decrease": 0.0,
+    "estimator__min_samples_leaf": 6,
+    "estimator__min_samples_split": 2,
+    "estimator__min_weight_fraction_leaf": 0.0,
+    "estimator__monotonic_cst": null,
+    "estimator__random_state": null,
+    "estimator__splitter": "best",
+    "estimator": "DecisionTreeClassifier(criterion='entropy', max_depth=3, min_samples_leaf=6)",
+    "learning_rate": 0.001,
+    "n_estimators": 50,
+    "random_state": null
+  }
+}

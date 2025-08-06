@@ -1,0 +1,12 @@
+# profiles.yml
+
+fraud_detection_pipeline:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: 'fraud_detection_db.duckdb'
+      # Optional: add extensions to use
+      # extensions:
+      #   - httpfs
+      #   - parquet

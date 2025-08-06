@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+ENV/
+.env
+.env.*
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# dbt
+/dbt_project/target/
+/dbt_project/logs/
+
+# Model artifacts
+# *.pkl
+*.joblib
+
+# Data
+/data/raw/
+/data/source/
+/data/simulation_claims.csv
+/data/insurance_claims.csv
+/data/train_claims.csv
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+*.log
+
+# Misc
+*.swp

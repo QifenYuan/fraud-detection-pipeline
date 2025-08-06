@@ -1,0 +1,27 @@
+# dbt_project/models/sources.yml
+version: 2
+
+sources:
+  - name: raw_claims_data
+    description: "Raw claims data loaded from CSV files."
+    schema: main # For DuckDB, this corresponds to the main schema
+    tables:
+      - name: claims_batch
+        description: "A table containing batches of raw insurance claims."
+        # The identifier tells dbt how to find the CSV file.
+        # We use dbt's read_csv function to load it.
+        identifier: "read_csv_auto('../data/source/claims_batch_*.csv', header=true)"
+        # Specify only the important columns for which we want to 
+        # add documentation, tests (not_null, accepted_values), or other metadata,
+        # the other columns will still be available in the table,
+        columns:
+          - name: policy_number
+            description: "Unique identifier for the policy."
+            tests:
+              - not_null
+          - name: fraud_reported
+            description: "Whether fraud was reported for the claim (Y/N)."
+            tests:
+              - not_null
+              - accepted_values:
+                  values: ['Y', 'N']

@@ -1,0 +1,21 @@
+
+# dbt_project.yml
+
+name: 'fraud_detection_pipeline'
+version: '1.0.0'
+config-version: 2
+
+# This setting configures which "profile" dbt uses for this project.
+profile: 'fraud_detection_pipeline'
+
+# These configurations apply to all models in this project
+# Note: you can override these configurations for specific models
+# or sub-directories.
+models:
+  fraud_detection_pipeline:
+    # Configures models in both the staging and marts directories to be materialized as tables.
+    # This is a good default for DuckDB, as it can improve performance.
+    staging:
+      +materialized: table
+    marts:
+      +materialized: table

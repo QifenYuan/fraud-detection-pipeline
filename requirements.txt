@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+pydantic
+joblib
+pandas
+scikit-learn
+duckdb
+dbt-duckdb
+matplotlib
+seaborn
+plotly
+xgboost
+lightgbm
+catboost
