@@ -186,7 +186,7 @@ git commit -m "Initial commit: add project files"
 Copy the remote URL from your new GitHub repo (e.g., `https://github.com/yourusername/fraud-detection-pipeline.git`), then run:
 
 ```bash
-git remote add origin https://github.com/yourusername/fraud-detection-pipeline.git
+git remote add origin https://github.com/QifenYuan/fraud-detection-pipeline.git
 git branch -M main
 git push -u origin main
 ```
@@ -210,7 +210,7 @@ git push -u origin main
 #### 6. (Optional) Set Up Repository Features
 
 - Enable Issues and Discussions if you want community feedback.
-- Set up GitHub Actions for CI/CD if you want automated testing.
+- [future!] Set up GitHub Actions for CI/CD if you want automated testing.
 
 ---
 
