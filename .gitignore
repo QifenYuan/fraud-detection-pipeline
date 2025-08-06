@@ -1,11 +1,5 @@
-# Archive of files and directories to ignore in the project
-/archive/
-
 # The other working directories and files
 to-do.md 
-VISION.md
-step-by-step.md
-initial-plan.md
 
 # Scripts
 /scripts/generate_new_data.py

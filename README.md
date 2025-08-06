@@ -103,7 +103,7 @@ uvicorn app.main:app --reload
 
 ### 7. Test the API
 
-Use Postman or curl to send POST requests to `http://127.0.0.1:8000/predict` with sample JSONs from `test_samples/`.
+Use Postman or curl to send POST requests to `http://127.0.0.1:8000/predict` with sample JSONs from `data/test_samples/`.
 
 ---
 
